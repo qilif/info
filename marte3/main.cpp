@@ -6,9 +6,7 @@ int main()
 {
     int x, y, n, a, z, o, r;
 
-    cin >> x;
-    cin >> y;
-    cin >> n;
+    cin >> x >> y >> n;
 
     a = n / (x * y);
     r = n % (x * y);
