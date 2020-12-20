@@ -16,6 +16,5 @@ int main()
         a = a + 1;
         n = n - 1;
     }
-
     return 0;
 }
