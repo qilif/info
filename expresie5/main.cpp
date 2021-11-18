@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int n, i, j, p, s;
+    long long n, i, j, p, s;
 
     cin >> n;
     s = 0;
@@ -14,12 +14,10 @@ int main()
         for (j = 1;j <= i; j++)
         {
             p = p * i;
-            s = s + p;
         }
-
-
+        s = s + p;
     }
 
-    cout << s;
+    cout << "Rezultatul este " << s;
     return 0;
 }
