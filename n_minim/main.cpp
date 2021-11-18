@@ -4,19 +4,21 @@ using namespace std;
 
 int main()
 {
-    long long n, m, Min, i;
+    long long n, m, minim, i;
 
     cin >> n;
 
-    Min = n;
+    cin >> minim;
 
-    for (i = 1; i >= n; i++)
+    for (i = 2; i <= n; i++)
     {
         cin >> m;
-        if (Min < m)
-            Min = m;
+        if (minim > m)
+        {
+            minim = m;
+        }
     }
 
-    cout << Min;
+    cout << minim;
     return 0;
 }

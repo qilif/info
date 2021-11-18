@@ -4,20 +4,20 @@ using namespace std;
 
 int main()
 {
-    long long n, maxi = 0, f = 10, x;
+    int n, a;
 
     cin >> n;
+    a = 0;
 
-    while(f <= n * 10)
+    while (n)
     {
-        x = (n / f) * (f / 10) + n % (f / 10);
-
-        if((n / f) * (f / 10) + n % (f / 10) > maxi)
+        if (n%10 < a && n % 2 == 0)
         {
-            maxi = (n / f) * (f / 10) + n % (f / 10);
+            a = n%10;
         }
-        f = f * 10;
+        n/=10;
     }
-    cout << maxi;
+
+    cout << a;
     return 0;
 }
