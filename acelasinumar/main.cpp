@@ -15,7 +15,7 @@ int main()
         s = s + m;
         k--;
     }
-    if (s == n)
+    if (s == 0)
     {
         cout << "DA";
     }
