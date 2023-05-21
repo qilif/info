@@ -3,12 +3,12 @@
 using namespace std;
 
 int main()
-
 {
-    int a, b, c;
-    cin >> a;
-    cin >> b;
-    c = a + b;
-    cout << c << endl;
+    int a, b;
+
+    cin >> a >> b;
+
+    cout << a+b;
+
     return 0;
 }

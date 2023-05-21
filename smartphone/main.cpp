@@ -1,17 +1,20 @@
-#include <iostream>
+#include <fstream>
 
 using namespace std;
+
+ifstream in ("smartphone.in");
+ofstream out ("smartphone.out");
 
 int main()
 {
     long long c, n, nr, i, a = 0, b = 0;
 
-    fin >> c >> n;
+    in >> c >> n;
 
         for (i = 1; i <= n; i++)
         {
-            fin >> nr;
-            if (nr >= a)
+            in >> nr;
+            if (nr > a)
             {
                 b = a;
                 a = nr;
@@ -23,11 +26,11 @@ int main()
         }
         if (c == 1)
         {
-            fout << a;
+            out << a;
         }
         else
         {
-            fout << b;
+            out << b;
         }
 
     return 0;

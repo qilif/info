@@ -2,19 +2,21 @@
 
 using namespace std;
 
-ifstream
+ifstream in ("zmeu.in");
+ofstream out ("zmeu.out");
 
 int main()
 {
-    long long n, m, a, b, c;
+    int n, m, s;
 
-    cin >> n >> m;
+    in >> n >> m;
 
-    a = m * 2;
-    b = n / a;
-    c = n % a;
+    if (n >= m * 2)
+    {
+        n = n - m * 2;
+        s++;
+    }
 
-    cout << b << endl;
-    cout << a - c;
+    out << s << '\n' << m * 2 - n;
     return 0;
 }

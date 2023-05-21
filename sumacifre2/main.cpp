@@ -4,13 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a, c1, c2;
-
-    cin >> a;
-
-    c2 = a % 10;
-    c1 = (a / 10) % 10;
-
-    cout << c1 + c2 << endl;
+    int n,s=0;
+    cin>>n;
+    s+=n%10+n/10;
+    cout<<s;
     return 0;
 }
