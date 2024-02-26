@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1701880152 source:c:\users\ripaf\onedrive\documents\info\maxim7\main.cpp
+	<fstream>
+	<algorithm>
+

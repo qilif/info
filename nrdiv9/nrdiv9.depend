@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1698747192 source:c:\users\ripaf\onedrive\documents\codeforces\nrdiv9\main.cpp
+	<fstream>
+	<cmath>
+

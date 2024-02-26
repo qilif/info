@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1700156475 source:c:\users\ripaf\onedrive\documents\info\numchar\main.cpp
+	<iostream>
+	<cstring>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1696864665 source:c:\users\ripaf\onedrive\documents\info\ksort\main.cpp
+	<iostream>
+	<algorithm>
+

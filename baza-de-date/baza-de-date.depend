@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1696779005 source:c:\users\ripaf\onedrive\documents\info\baza-de-date\main.cpp
+	<iostream>
+	<algorithm>
+	<cstring>
+
