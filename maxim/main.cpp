@@ -4,18 +4,16 @@ using namespace std;
 
 int main()
 {
-    long long m = 0, n;
-    n = 1;
-
-    while (n != 0)
+    int m=0,n=1;
+    while(n)
     {
-        cin >> n;
-        if (m < n)
-        {
-            m = n;
-        }
+        cin>>n;
+        if(m<n)
+            m=n;
     }
-
-    cout << m;
+    if(m==0)
+        cout<<"NU EXISTA";
+    else
+        cout<<m;
     return 0;
 }

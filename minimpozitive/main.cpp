@@ -4,20 +4,15 @@ using namespace std;
 
 int main()
 {
-    int n, m, mi = 1000000;
-
-    cin >> n;
-    m = n;
-
-    while (m != 0)
+    int n,m=1000001;
+    while(cin>>n)
     {
-        cin >> n;
-        if (mi > n && n > 0)
-        {
-            mi = n;
-        }
+        if(m>n&&n>0)
+            m=n;
     }
-
-    cout << mi;
+    if(m==1000001)
+        cout<<"NU EXISTA";
+    else
+        cout<<m;
     return 0;
-}`
+}

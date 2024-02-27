@@ -1,18 +1,12 @@
 #include <fstream>
 
 using namespace std;
-
-ifstream fin ("sum.in");
-ofstream fout ("sum.out");
-
+ifstream in ("sum.in");
+ofstream out ("sum.out");
 int main()
 {
-    long long a, b, s;
-
-    fin >> a >> b;
-
-    s = a + b;
-
-    fout << s << endl;
+    int n,m;
+    in>>n>>m;
+    out<<n+m;
     return 0;
 }

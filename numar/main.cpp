@@ -1,15 +1,85 @@
-    #include <iostream>
+#include <fstream>
 
-    using namespace std;
+using namespace std;
 
-    int main()
+ifstream cin("numar.in");
+ofstream cout("numar.out");
+
+int v[10];
+
+int main()
+{
+    int n,m,mm=-1,s=0;
+    bool e=false;
+    cin>>n;
+    for(int i=1;i<=n;i++)
     {
-        int n, a, c;
-
-        cin >> n;
-        a = n % 10;
-        c = n / 100;
-
-        cout << a * c;
-        return 0;
+        cin>>m;
+        if(m>=mm)
+            s+=m;
+        else
+        {
+            if(s==0)
+            {
+                v[0]++;
+                s=m;
+                continue;
+            }
+            s%=9;
+            if(s==0)
+                s=9;
+            v[s]++;
+            s=m;
+            e=true;
+        }
+        mm=m;
     }
+    if(m>=mm)
+    {
+        s+=m;
+        if(s==0)
+        {
+            v[0]++;
+            s=m;
+        }
+        else
+        {
+            s%=9;
+            if(s==0)
+                s=9;
+            v[s]++;
+            s=m;
+            e=true;
+        }
+        s%=9;
+        if(s==0)
+            s=9;
+        v[s]++;
+    }
+    else
+    {
+        if(s==0)
+        {
+            v[0]++;
+            s=m;
+        }
+        else
+        {
+            s%=9;
+            if(s==0)
+                s=9;
+            v[s]++;
+            s=m;
+        }
+        e=true;
+    }
+    if(e)
+    {
+        for(int i=9;i>=0;i--)
+            if(v[i]==0)
+                cout<<i;
+    }
+    else
+        cout<<-1;
+    return 0;
+}
